@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Database1ModelContainer" CdmEntityContainer="Database1Entities">
+    <EntitySetMapping Name="Dolgnosty">
+      <EntityTypeMapping TypeName="Database1Model.Dolgnosty">
+        <MappingFragment StoreEntitySet="Dolgnosty">
+          <ScalarProperty Name="id_dolgnost" ColumnName="id_dolgnost" />
+          <ScalarProperty Name="nazvanie" ColumnName="nazvanie" />
+          <ScalarProperty Name="oklad" ColumnName="oklad" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Oplata">
+      <EntityTypeMapping TypeName="Database1Model.Oplata">
+        <MappingFragment StoreEntitySet="Oplata">
+          <ScalarProperty Name="id_oplati" ColumnName="id_oplati" />
+          <ScalarProperty Name="id_naznachenia" ColumnName="id_naznachenia" />
+          <ScalarProperty Name="id_poochreniya" ColumnName="id_poochreniya" />
+          <ScalarProperty Name="data" ColumnName="data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Poochreniya">
+      <EntityTypeMapping TypeName="Database1Model.Poochreniya">
+        <MappingFragment StoreEntitySet="Poochreniya">
+          <ScalarProperty Name="id_poochreniya" ColumnName="id_poochreniya" />
+          <ScalarProperty Name="nazvanie" ColumnName="nazvanie" />
+          <ScalarProperty Name="procent_ot_oklada" ColumnName="procent_ot_oklada" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sotrudniki">
+      <EntityTypeMapping TypeName="Database1Model.Sotrudniki">
+        <MappingFragment StoreEntitySet="Sotrudniki">
+          <ScalarProperty Name="id_sotrudnika" ColumnName="id_sotrudnika" />
+          <ScalarProperty Name="Familia" ColumnName="Familia" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Otchestvo" ColumnName="Otchestvo" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="Data_rod" ColumnName="Data_rod" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uchet_inform_o_sotrudnikah">
+      <EntityTypeMapping TypeName="Database1Model.Uchet_inform_o_sotrudnikah">
+        <MappingFragment StoreEntitySet="Uchet_inform_o_sotrudnikah">
+          <ScalarProperty Name="id_naznachenia" ColumnName="id_naznachenia" />
+          <ScalarProperty Name="id_sotrudnika" ColumnName="id_sotrudnika" />
+          <ScalarProperty Name="id_dolgnost" ColumnName="id_dolgnost" />
+          <ScalarProperty Name="data_priema" ColumnName="data_priema" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
